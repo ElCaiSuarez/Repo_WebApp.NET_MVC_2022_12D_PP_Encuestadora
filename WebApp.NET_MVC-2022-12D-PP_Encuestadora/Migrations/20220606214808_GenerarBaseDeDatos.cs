@@ -35,11 +35,13 @@ namespace WebApp.NET_MVC_2022_12D_PP_Encuestadora.Migrations
                     tituloEncuesta = table.Column<string>(nullable: false),
                     datetimeCreacionEncuesta = table.Column<DateTime>(nullable: false),
                     datetimeVencimientoEncuesta = table.Column<DateTime>(nullable: false),
-                    puntosEncuesta = table.Column<int>(nullable: false)
+                    puntosEncuesta = table.Column<int>(nullable: false),
+
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_encuestas", x => x.EncuestaId);
+
                 });
 
             migrationBuilder.CreateTable(
@@ -63,11 +65,18 @@ namespace WebApp.NET_MVC_2022_12D_PP_Encuestadora.Migrations
                     PreguntaId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     tituloPregunta = table.Column<string>(nullable: false),
-                    tipoPregunta = table.Column<int>(nullable: false)
+                    tipoPregunta = table.Column<int>(nullable: false),
+                    EncuestaId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_preguntas", x => x.PreguntaId);
+                    table.ForeignKey(
+                        name: "FK_preguntas_encuestas_EncuestaId",
+                        column: x => x.EncuestaId,
+                        principalTable: "encuestas",
+                        principalColumn: "EncuestaId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(

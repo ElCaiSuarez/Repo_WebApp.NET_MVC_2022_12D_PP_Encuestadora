@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -28,5 +29,12 @@ namespace WebApp.NET_MVC_2022_12D_PP_Encuestadora.Models
 
         //COMO RELACIONAR LA DBSET DE PREGUNTAS DE CADA ENCUESTA???
         
+        
+        //public List<PreferenciaUsuario> preferenciasObjetivo { get; set; }
+
+        public int ClienteId { get; set; }
+
+
+
     }
 }

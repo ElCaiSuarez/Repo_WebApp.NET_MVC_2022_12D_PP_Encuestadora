@@ -15,7 +15,7 @@ namespace WebApp.NET_MVC_2022_12D_PP_Encuestadora.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
+                .HasAnnotation("ProductVersion", "3.1.25")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -61,6 +61,9 @@ namespace WebApp.NET_MVC_2022_12D_PP_Encuestadora.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("datetimeCreacionEncuesta")
                         .HasColumnType("datetime2");
 
@@ -104,6 +107,9 @@ namespace WebApp.NET_MVC_2022_12D_PP_Encuestadora.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("EncuestaId")
+                        .HasColumnType("int");
 
                     b.Property<int>("tipoPregunta")
                         .HasColumnType("int");

@@ -32,9 +32,16 @@ namespace WebApp.NET_MVC_2022_12D_PP_Encuestadora.Models
         [Display(Name = "Domicilio")]
         public string domicilioUsuario { get; set; }
 
+        //[Display(Name = "Ocupacion")]
+
+        //public string ocupacion { get; set; }
+
         [Display(Name = "Preferencia")]
         [EnumDataType(typeof(PreferenciaUsuario))]
         public PreferenciaUsuario preferenciaUsuario { get; set; }
+
+        //[Display(Name = "Preferencias")]
+        //public List<PreferenciaUsuario> preferencias { get; set; }
 
         //COMO RELACIONAR LA DBSET DE ENCUESTAS DE CADA CLIENTE???
 

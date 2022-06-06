@@ -1,0 +1,73 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One');
+@import url('https://fonts.googleapis.com/css2?family=Niramit');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist');
+
+header {
+    background-color: rgb(195 251 194);
+    font-family: "Tiro Devanagari Hindi";
+    font-style: normal;
+    font-size: large;
+    font-weight: 200;
+    padding-left: 0px;
+}
+
+body {
+    background-color: rgb(235 254 234);
+}
+
+footer {
+    background-color: rgb(195 251 194);
+    font-family: "Epilogue";
+    font-style: italic;
+    font-size: medium;
+    font-weight: 100;
+}
+
+h1 {
+    margin-top: 40px;
+    font-family: "Changa One";
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+.body-container {
+    margin-left: -50px;
+    display: flex;
+}
+
+.menuInicial {
+    padding-top: 50px;
+    margin-left: 70px;
+    font-family: "Urbanist";
+    font-size: larger;
+    justify-content: center;
+    line-height: 5em;
+    width: 30%;
+    align-items: start;
+}
+
+#Seccion1 {
+    position: absolute;
+    top: 175px;
+    right: 230px;
+}
+#Seccion2 {
+    position: absolute;
+    top: 350px;
+    right: 200px;
+}
+#Seccion3 {
+    position: absolute;
+    top: 525px;
+    right: 228px;
+}
+
+
+.Intro {
+    font-family: "Niramit";
+    font-size: medium;
+    font-style: oblique;
+    width: 70%;
+}

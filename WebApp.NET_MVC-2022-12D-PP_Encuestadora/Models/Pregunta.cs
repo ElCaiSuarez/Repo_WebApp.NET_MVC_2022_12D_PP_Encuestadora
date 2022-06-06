@@ -21,6 +21,8 @@ namespace WebApp.NET_MVC_2022_12D_PP_Encuestadora.Models
         [EnumDataType(typeof(TipoPregunta))]
         public TipoPregunta tipoPregunta { get; set; }
 
+        public int EncuestaId { get; set; }
+
         //COMO RELACIONAR LA DBSET DE OPCIONES DE CADA PREGUNTA???
         //COMO RELACIONAR EL TIPO DE PREGUNTA CON EL INPUT DEL FORMULARIO???
     }
